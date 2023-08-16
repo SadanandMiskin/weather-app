@@ -28,7 +28,7 @@ if(process.env.NODE_ENV=='production'){
         res.sendFile(path.resolve(__dirname,'build','index.html'))
     })
 }
-
-app.listen( 4000, ()=>{
+var PORT = process.env.PORT || 4000
+app.listen( PORT, ()=>{
     console.log('started')
 })
