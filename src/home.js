@@ -12,12 +12,13 @@ export default function Home() {
     let submit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://weather-app-phi-lake.vercel.app/', {
-                msg
-            });
-            setServerResponse(response.data);
-            setIsSubmitted(true);
-        } catch (e) {
+    const response = await axios.post('https://weather-app-phi-lake.vercel.app/', {
+        msg
+    });
+    console.log(response.data); 
+    setServerResponse(response.data);
+    setIsSubmitted(true);
+}  catch (e) {
             console.log(e);
         }
     }
