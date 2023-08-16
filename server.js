@@ -14,7 +14,7 @@ var value =''
 
 app.post('/', async (req, res) => {
     const { msg } = req.body;
-    const url = "https://api.openweathermap.org/data/2.5/weather?q="+msg+"&appid=c1dce56d74908012ceafaa7fb33120fc";
+    const url = "https://api.openweathermap.org/data/2.5/weather?q="+msg+"&appid=1d1394b574c5fc3aa229814578fec613";
     var data = await axios.get(url)
     console.log(data.data)
     res.json(data.data)
