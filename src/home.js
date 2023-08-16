@@ -12,7 +12,7 @@ export default function Home() {
     let submit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://localhost:4000/', {
+            const response = await axios.post('https://weather-app-phi-lake.vercel.app/', {
                 msg
             });
             setServerResponse(response.data);
