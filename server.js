@@ -6,7 +6,10 @@ require('dotenv').config();
 const app = express()
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
-app.use(cors())
+app.use(cors({
+    origin: 'https://weather-4d9s36vog-sadanandmiskin.vercel.app', // Replace with your frontend URL
+    credentials: true // If you need to include cookies in the request
+}));
 
 var value =''
 
