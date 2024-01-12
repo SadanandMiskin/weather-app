@@ -12,7 +12,6 @@ app.use(cors({
 }));
 
 var value =''
-
 app.post('/', async (req, res) => {
     const { msg } = req.body;
     const url = "https://api.openweathermap.org/data/2.5/weather?q="+msg+"&appid=1d1394b574c5fc3aa229814578fec613";
