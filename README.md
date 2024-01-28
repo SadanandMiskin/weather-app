@@ -1,5 +1,6 @@
 # Weather App
 
+
 A simple web application that fetches weather information based on the user's provided city name using the OpenWeatherMap API.
 
 ## Getting Started
